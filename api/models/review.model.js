@@ -2,29 +2,21 @@ import { timeStamp } from 'console';
 import mongoose from 'mongoose';
 const {Schema} = mongoose;
 
-const  reviewSchema = newSchema(
-    {
+const  reviewSchema = new Schema({
     gigId:{
         type: String,
         required:true,
     },
-    gigId:{
+    userId:{
         type: String,
         required:true,
     },
-    gigId:{
-        type: String,
+    star:{
+        type: Number,
         required:true,
+        enum: [1,2,3,4,5],
     },
-    gigId:{
-        type: String,
-        required:true,
-    },
-    gigId:{
-        type: String,
-        required:true,
-    },
-    gigId:{
+    desc:{
         type: String,
         required:true,
     },
