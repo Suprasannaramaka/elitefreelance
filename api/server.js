@@ -20,6 +20,11 @@ catch (error) {
 }
 };
 app.use("/api/users", userRoute);
+app.use("/api/conversations", conversationRoute);
+app.use("/api/messages", messageRoute);
+app.use("/api/gigs", gigRoute);
+app.use("/api/orders", orderRoute);
+app.use("/api/reviews", reviewRoute);
 app.listen(3000 , () => {
   connect();
     console.log("Connected to backend!");
