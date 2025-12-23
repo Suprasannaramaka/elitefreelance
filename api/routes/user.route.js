@@ -1,8 +1,7 @@
 import express from 'express';
+import { deleteUser } from '../controller/user.controller';
 
 const router = express.Router();
-router.get('/test' , (req, res) => {
-  res.send({message: "Hello from user route"});
-})
+router.get('/test' , deleteUser);
 
 export default router;
