@@ -16,7 +16,7 @@ catch (error) {
 }
 };
 app.use("/api/users", userRoute);
-app.listen(8080 , () => {
+app.listen(3000 , () => {
   connect();
     console.log("Connected to backend!");
 })
