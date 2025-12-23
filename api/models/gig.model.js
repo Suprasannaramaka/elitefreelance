@@ -5,67 +5,77 @@ const gigSchema = new Schema({
     userId:
     {
         type:String,
-        required,
+        required: true,
     },
      title:
     {
         type:String,
-        required,
+        required: true,
     },
-     description:
+     desc:
     {
         type:String,
-        required,
+        required: true,
     },
      totalStars:
     {
         type:Number,
-        required,
+      default: 0,
     },
      starNumber:
     {
         type:Number,
-        required,
+        default: 0,
     },
      cat:
     {
         type:String,
-        required,
+        required:true,
     }, 
     price:
     {
         type:Number,
-        required,
+        required:true,
     },
     cover:
     {
         type:String,
-        required,
+        required:true,
     },
     images:
     {
-        type:String,
-        required,
+        type:[String],
+         required:false,
     },
     shortTime:
     {
         type:String,
-        required,
+        required:true,
     },
     shortDesc:
     {
         type:String,
-        required,
+        required:true,
     },
      deliveryTime:
     {
         type:String,
-        required,
+        required:true,
     },
-     userId:
+    revisionNumber:
     {
-        type:String,
-        required,
+        type:Number,
+        required:true,
+    },
+    features:
+    {
+        type:[String],
+        required:false,
+    },
+    sales:
+    {
+        type:Number,
+        default: 0,
     },
 },
 {
