@@ -7,6 +7,7 @@ import messageRoute from "./routes/message.route.js";
 import gigRoute from "./routes/gig.routes.js";
 import orderRoute from "./routes/order.route.js";
 import reviewRoute from "./routes/review.route.js";
+import authRoute from  "./routes/auth.routes.js";
 dotenv.config();
 const app = express();
 mongoose.set('strictQuery', true);
