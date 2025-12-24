@@ -21,6 +21,7 @@ catch (error) {
 }
 };
 app.use("/api/users", userRoute);
+app.use(express.json());
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/gigs", gigRoute);
