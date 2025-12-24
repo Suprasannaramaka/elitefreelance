@@ -1,9 +1,9 @@
-import {User} from "../models/user.model.js";
+import {getUser} from "../models/user.model.js";
 
 export const register = async(req , res) =>
 {
     try {
-        const newUser = new User({
+        const newUser = new getUser({
      username: "ramakasuprasanna",
      email: "ramakasuprasanna@gmail.com",
      country: "India",

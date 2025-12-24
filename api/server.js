@@ -26,6 +26,7 @@ app.use("/api/messages", messageRoute);
 app.use("/api/gigs", gigRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/reviews", reviewRoute);
+app.use("/api/auth", authRoute);
 app.listen(3000 , () => {
   connect();
     console.log("Connected to backend!");
