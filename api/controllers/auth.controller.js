@@ -16,5 +16,4 @@ catch(error)
 {
     res.status(500).send({message: "Something went wrong"});
 }
-
 }
