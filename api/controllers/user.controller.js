@@ -1,4 +1,4 @@
-export const getUsers = (req, res) => {
+export const getUser = (req, res) => {
   res.json({ message: "Get all users" });
 };
 
