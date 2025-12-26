@@ -29,7 +29,7 @@ app.use("/api/gigs", gigRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/reviews", reviewRoute);
 app.use("/api/auth", authRoute);
-app.listen(8080 , () => {
+app.listen(8800 , () => {
   connect();
     console.log("Connected to backend!");
 })
