@@ -2,8 +2,15 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import userRoute from "./routes/user.route.js";
-dotenv.config();
+import gigRoute from "./routes/gig.routes.js";
+import orderRoute from "./routes/order.route.js";
+import reviewRoute from "./routes/review.route.js";
+import authRoute from "./routes/auth.routes.js";
+import conversationRoute from "./routes/conversation.route.js";
+import messageRoute from "./routes/message.route.js";
+
 const app = express();
+dotenv.config();
 mongoose.set('strictQuery', true);
 const connect  = async () => {
 try {
