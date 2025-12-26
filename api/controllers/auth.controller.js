@@ -4,11 +4,11 @@ export const register = async(req , res) =>
 {
     try {
     const newUser = new User({
-     username: "test",
-     email: "test",
-     password: "test",
-     country: "test",
-     phone: "1234567890",
+     username: "test_123",
+     email: "test@email.com",
+    password: "123456",
+    country: "india",
+    phone: "123456789"
     });
     await newUser.save();
     res.status(201).send({message: "User has been created successfully"});
