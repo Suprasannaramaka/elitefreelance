@@ -1,4 +1,4 @@
-import User from "../models/user.model.js";
+import {User} from "../models/user.model.js";
 
 export const register = async(req , res) =>
 {
@@ -12,8 +12,10 @@ export const register = async(req , res) =>
     await newUser.save();
     res.status(201).send({message: "User has been created successfully"});
 }
-catch(error)
-{
-    res.status(500).send({message: "Something went wrong"});
+catch (error) {
+  console.error("REGISTER ERROR:", error);
+  res.status(500).json({
+    message: error.message || "Internal Server Error",
+  });
 }
 }
