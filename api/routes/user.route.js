@@ -1,7 +1,7 @@
 import express from 'express';
-import {user} from '../models/user.model.js';
+import user from '../models/user.model.js';
 
 const router = express.Router();
-router.get("/register");
+ router.delete(':id' , deleteUser);
 
-export default router;
+ export default router;
