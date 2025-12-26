@@ -1,9 +1,9 @@
 import express from 'express';
-import Gig from '../models/gig.model.js';
+import {Gig} from '../controllers/gig.controller.js';
 const router = express.Router();
 
-//create  new conversation 
+//create  new gig
 
-router.post('/conversations' , conversation)
+router.post('/gigs' , Gig)
 
 export default router;
