@@ -16,8 +16,8 @@ catch (error) {
   console.log(error);
 }
 };
-app.use("/api/users", userRoute);
 app.use(express.json());
+app.use("/api/users", userRoute);
 app.use("/api/auth" , authRoute);
 app.listen(8800 , () => {
   connect();
