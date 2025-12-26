@@ -1,9 +1,9 @@
 import express from 'express';
-import {Conversation}  from '../controllers/conversation.controller.js';
+import {conversation}  from '../controllers/conversation.controller.js';
 const router = express.Router();
 
 //create  new conversation 
 
-router.post('/conversations' , Conversation)
+router.post('/conversations' , conversation)
 
 export default router;
