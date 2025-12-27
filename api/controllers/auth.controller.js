@@ -28,7 +28,7 @@ if(!user) return res.status(404).send({message: "User not found"});
 const isCorrect = await bcrypt.compareSync(req.body.password , user.password);
 if(!isCorrect) return res.status(400).send({message: "wrong username or password"});
 
-const {password , ...info} = user._doc;
+const {password , ...info} = user._doc
 
   }
   catch(err)
