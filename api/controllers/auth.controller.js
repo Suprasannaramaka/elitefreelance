@@ -18,4 +18,19 @@ catch (error) {
     message: error.message || "Internal Server Error",
   });
 }
+};
+export const login = async(req, res) =>
+{
+  try{
+const user = await User.findOne({username: req.body.username});
+if(!user) return res.status(404).send({message: "User not found"});
+
+const isCorrect = await bcrypt.compareSync(req.body.password , user.password);
+if(!isCorrect) return res.status(400).send({message: "wrong username or password"});
+
+  }
+  catch(err)
+  {
+     return res.status(500).send({message: "Internal server error"});
+  }
 }
